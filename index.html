@@ -4,18 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Javascript Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header id="timer">Time left: </header>
+
+
     <div class="container">
         <div class="container">
-            <div id="home" class="flex-column flex-center">
+            <div id="home">
                 <h1> Please start when ready! </h1>
-                <a href="/game.html" class="btn">Play</a>
-                <a href="/highschores.html" id="highscore-btn" class="btn">High Scores</a>
+                 <button id="startbutton">Play</button>
+                 <button id="highscores">High Scores</button>
+
+
+                 
+                   
+
+
+                    <div id="questions">Questions 
+                            <button id="a" >A</button>
+                            <button id="b" >B</button>
+                            <button id="c" >C</button>
+                            <button id="d" >D</button>
+
+                    </div>
+
+
+                    <div id="submittedyourscore">
+                        <h2>Enter initials:</h2>
+                        <input type="text" />
+                        <button>submit initials</button>
+
+                    </div>
+                        
+
+                    <div id="highestscores">HighestScores:</div>
+
+
+                    
+                </div>
+                
             </div>
+
+            
         </div>
+
+
+       
+
+            
+        
+       
     </div>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
