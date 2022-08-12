@@ -13,7 +13,7 @@ startbuttonEL.addEventListener('click', startGame)
 
 
 
-var question1 = [
+var questions = [
     {
     question: 'what does hover do?',
     choices: [
@@ -21,10 +21,9 @@ var question1 = [
     {datatype: 'nothing', correct: false},
     {datatype: 'provide feedback when hovering with mouse', correct: true},
     {datatype: 'does it matter?', correct: true}
-    ]
-}]
+}],
 
-var question2= [
+    
     {
     question:  'who invented css', 
     choices: [ 
@@ -32,20 +31,19 @@ var question2= [
     {datatype:'i dont know', correct: false},
     {datatype: 'nicholas cage', correct: false},
     {datatype: 'i dont have an idea', correct: false}
-    ]
-}]
+]} 
 
 
-var question3 = [
-    {
-    question: 'who invented javascript',
+
+
+    {question: 'who invented javascript',
     choices: [
     {datatype: 'mark zuckerberg', correct: false},
     {datatype:'jeff bezos', correct: false},
     {datatype:'brendan eich', correct: true},
     {datatype:'bill gates', correct: false}
-    ]
-}]
+    ]}
+
 
 
 
