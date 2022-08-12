@@ -5,6 +5,10 @@ h1 {
     font-size: 15px;
 }
 
+body {
+    display: flex;
+    
+}
 .container {
     width: 300px;
     height: 400px; 
@@ -17,6 +21,7 @@ h1 {
 
 
 button {
+    display:grid
     font-size: 15px;
     text-align: center;
     padding: 10px;
@@ -48,6 +53,10 @@ button:hover {
 
 
 #questions {
-    display: 
+    display: ;
 
+}
+
+.hide {
+    display: none;
 }
