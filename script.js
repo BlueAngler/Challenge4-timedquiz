@@ -6,9 +6,10 @@ var cEL=document.getElementById('c');
 var dEL=document.getElementById('d');
 var timerEL=document.getElementById('timer');
 var startbuttonEL=document.getElementById('startbutton');
-var questionscontainerEl=document.getElementById('questionscontainer')
+var questionscontainerEl=document.getElementById('questionscontainer');
+var answerbuttonsEl=document.getElementById("answerbuttons");
 
-startbuttonEL.addEventListener('click', startGame)
+
 
 
 var questions = [//array of questions with answer choices. Put questions and answer choices in an array so we can use a "for loop"
@@ -59,9 +60,13 @@ function startGame () {
     //checking to see if fn works
   
     startbuttonEL.classList.add('hide')
-    questionscontainerEl.classList.remove('hide')
     
-   
+    questionscontainerEl.classList.remove('hide')
+
+    answerbuttonsEl.classList.remove('hide')
+
+    
+   displayquestions (); 
     
 }
 
@@ -70,9 +75,17 @@ function startGame () {
 function displayquestions () {
     //references actual question not just order of question.
     var activequestion= questions[currentquestion] //this will cycle through actual questions array and their positions using the "currentquestion" indez value
-    questionEl.textContent=activequestion.question
+    //for (currentquestion=0; currentquestion < currentquestion.lenght; currentquestion ++)
+    console.log(activequestion, "active question")
+    console.log(questions[currentquestion], "current question")
+    console.log(questions[currentquestion].question)
+    questionscontainerEl.textContent=activequestion.question
+
+
+  
 }
 
 
 
 
+startbuttonEL.addEventListener('click', startGame)
